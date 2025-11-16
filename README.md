@@ -1,100 +1,60 @@
 Household Energy Prediction Project
 📘 Project Overview
 
-This project focuses on analyzing and predicting household energy consumption using machine learning. The aim is to understand energy usage patterns, visualize trends, and build predictive models for forecasting power consumption.
+Predict household energy consumption using machine learning. Analyze usage patterns, visualize trends, and build predictive models for forecasting power consumption.
 
-Week 1: Data Collection & Cleaning
+📊 Dataset
 
-Tasks Completed:
+Name: Household Power Consumption
 
-Downloaded the Household Power Consumption dataset (household_power_consumption.zip) from the UCI Machine Learning Repository.
+Source: UCI Machine Learning Repository
 
-Extracted and loaded the dataset into Python using Pandas.
+File: household_power_consumption.zip
 
-Performed data cleaning:
+Contains electric power consumption measurements in one household (2006–2010).
 
-Replaced missing values with NaN
+🧹 Data Cleaning (Week 1)
 
-Removed invalid rows
+Loaded dataset and replaced missing values with NaN
 
-Converted numeric columns to float
+Removed invalid rows and converted numeric columns to float
 
-Filtered the dataset for specific analysis (e.g., 1st–2nd Feb 2007 for visualization examples).
+Filtered dataset for analysis-ready data
 
-Objective: Prepare a clean and structured dataset ready for exploratory analysis.
+📈 Exploratory Data Analysis & Basic Modeling (Week 2)
 
-Week 2: Exploratory Data Analysis (EDA) & Basic Modeling
+Visualized Global Active Power, Voltage, and Sub-Metering
 
-Tasks Completed:
+Checked distributions using histograms and boxplots
 
-Conducted EDA:
-
-Plotted Global Active Power, Voltage, and Sub-Metering trends over time
-
-Generated histograms and boxplots to identify distribution and outliers
-
-Created correlation heatmaps to study relationships between numeric features
-
-Prepared features for modeling:
-
-Selected numeric columns
-
-Handled missing values
-
-Built a Linear Regression model to predict Global_active_power:
-
-Split dataset into training (80%) and testing (20%)
+Built Linear Regression model to predict Global_active_power
 
 Evaluated model using R² and Mean Squared Error (MSE)
 
-Visualized predictions vs actual values for better insight
+⚙️ Feature Engineering & Advanced Modeling (Week 3)
 
-Objective: Gain insights from the data and build a baseline predictive model.
+Added features: Hour, Weekday, Rolling Averages (1hr & 24hr)
 
-Week 3: Advanced Modeling & Dashboard
+Trained Random Forest and XGBoost models
 
-Tasks Completed:
+Compared actual vs predicted values
 
-Feature Engineering:
-
-Extracted Hour and Weekday from datetime
-
-Calculated rolling averages (1-hour and 24-hour) for smoother trends
-
-Advanced Models:
-
-Trained Random Forest Regressor
-
-Trained XGBoost Regressor
-
-Evaluated model performance using R² and RMSE
-
-Visualization:
-
-Compared actual vs predicted values for both Random Forest and XGBoost
-
-Dashboard:
-
-Built a Streamlit dashboard for interactive visualization
-
-Displayed data preview, histograms, and model predictions
-
-Objective: Implement advanced predictive modeling and provide an interactive tool for visualization and monitoring.
+Built Streamlit dashboard for interactive visualization and predictions
 
 📂 Files Included
 
-energy_prediction.ipynb – Notebook with all preprocessing, analysis, and modeling steps
+energy_prediction.ipynb – Notebook with preprocessing, analysis, and modeling
 
 household_power_consumption.zip – Raw dataset
 
-🚀 Project Goals
+🎯 Project Goals
 
-Preprocess and clean the household power consumption dataset
+Preprocess and clean household energy data
 
-Explore and visualize energy usage patterns
+Perform exploratory analysis to understand energy usage
 
-Engineer meaningful features to improve predictive performance
+Engineer features to enhance model performance
 
-Train and evaluate advanced models (Random Forest, XGBoost)
+Train and evaluate advanced predictive models
 
-Provide a user-friendly dashboard for real-time energy predictio
+Build an interactive dashboard for real-time visualization
